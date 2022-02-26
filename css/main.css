@@ -54,7 +54,7 @@ header nav ul {
 }
 
 header nav ul li a {
-  font-size: 20px;
+  font-size: 19px;
   margin-right: 20px;
   line-height: 1.4;
   color: rgba(255, 255, 255, 0.7);
@@ -135,14 +135,18 @@ main section:nth-child(2) > ul {
   margin: 40px 0;
 }
 
-main section:nth-child(2) ul li {
+main section:nth-child(2) ul li, main section:nth-child(3) ul li {
   position: relative;
-  transition: 0.2s all;
 }
 
-/* main section:nth-child(2) ul li:hover {
+main section:nth-child(2) ul li > a, main section:nth-child(3) ul li > a {
+  transition: 0.2s all;
+  display: block;
+}
+
+main section:nth-child(2) ul li > a:hover, main section:nth-child(3) ul li > a:hover {
   transform: scale(1.07);
-} */
+}
 
 main section:nth-child(2) ul li img:nth-child(1) {
   border-radius: 5px;
@@ -157,7 +161,10 @@ main section:nth-child(2) ul li img:nth-child(1) {
 .starcraft2-bg,
 .diablo3-bg,
 .wow3-bg,
-.heroes-of-storm-bg {
+.heroes-of-storm-bg,
+.overwatch2-bg,
+.diablo-immortal-bg,
+.diabloIV-bg {
   position: absolute;
   right: 2px;
 }
@@ -276,7 +283,8 @@ main section:nth-child(4) {
 }
 
 main section:nth-child(4) > div {
-  background: url(https://images.blz-contentstack.com/v3/assets/blta8f9a8e092360c6c/blt764c5b7fc6a4146b/620167e3f2c2644f956a8312/Mobile_Bnet_Card-02.2.jpg?auto=webp) no-repeat;
+  background: url(https://images.blz-contentstack.com/v3/assets/blta8f9a8e092360c6c/blt764c5b7fc6a4146b/620167e3f2c2644f956a8312/Mobile_Bnet_Card-02.2.jpg?auto=webp)
+    no-repeat;
   background-size: cover;
   max-width: 1600px;
   margin: 0 auto;
